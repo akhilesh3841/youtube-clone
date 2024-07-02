@@ -1,0 +1,84 @@
+/* Basic styles */
+nav {
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles for left section */
+  .nav-left .menu-icon {
+    width: 22px;
+    margin-right: 15px; /* Adjusted for responsiveness */
+  }
+  
+  .nav-left .logo {
+    width: 100px; /* Adjust size based on needs */
+  }
+  
+  /* Styles for middle section */
+  .nav-middle .search-box.flex-div {
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+    flex: 1; /* Take remaining space */
+    max-width: 400px; /* Limit width on larger screens */
+  }
+  
+  .nav-middle .search-box.flex-div input {
+    width: 100%; /* Fill parent width */
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px; /* Adjust font size as needed */
+  }
+  
+  .nav-middle .search-box.flex-div img {
+    width: 15px;
+  }
+  
+  /* Styles for right section */
+  .nav-right.flex-div img {
+    width: 25px;
+    margin-right: 15px; /* Adjusted for responsiveness */
+  }
+  
+  .nav-right.flex-div img.user-icon {
+    width: 35px;
+    border-radius: 50%;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .nav-left .menu-icon {
+      margin-right: 10px;
+    }
+    
+    .nav-left .logo {
+      width: 80px; /* Adjust size as needed */
+    }
+    
+    .nav-middle .search-box.flex-div {
+      margin-right: 10px;
+    }
+    
+    .nav-middle .search-box.flex-div input {
+      font-size: 12px; /* Adjust font size for smaller screens */
+    }
+    
+    .nav-right.flex-div img {
+      width: 20px;
+      margin-right: 10px;
+    }
+    
+    .nav-right.flex-div img.user-icon {
+      width: 30px;
+    }
+  }
+  
